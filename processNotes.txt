@@ -1,0 +1,35 @@
+Process Notes for Basic React Application
+=========================================
+
+
+About Process Notes
+===================
+"Process Notes" is a step-by-step workflow document that outlines the "phases" of my app development and the successive steps taken at each
+milestone of application development. Groups of related steps are combined into "phase" modules so that they can be reorganized and refined 
+in post-review. This has proven to be EXTREMELY helpful in learning (i.e. Feynman technique (https://fs.blog/2012/04/feynman-technique/)) 
+and refining workflow so I can improve my process in future projects. It also has come in handy for some tricky bug fixes not only for
+past projects, but this one as well so I would urge you to consider at least doing a rough summary for your own benefit.
+
+
+Project Name
+============
+Basic React Application
+
+
+Project Descritpion
+===================
+
+
+
+Who is this for?
+================
+For those who have spent some time in the theoretical phase of learning the React library and want to put thier 
+knowledge into practical application. This project is means to be EXTREMELY simple
+
+
+What are the application features?
+==================================
+
+
+
+Who are the competitors and product insprirations?
