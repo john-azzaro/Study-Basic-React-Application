@@ -49,7 +49,6 @@ Who are the competitors and product insprirations?
 Process Workflow Summary:
 ========================
 
-
   Phase 1: Project Setup:
     1. Create HTML and JS files.
     2. Add HTML boilerplate and connect JS.
@@ -57,6 +56,10 @@ Process Workflow Summary:
   Phase 2: Add React to the webpage:
     1. Add "application-root" anchor point.  
     2. Load the React library code.
+
+  Phase 3: Select "application-root" and add ReactDOM to render app. 
+
+
 
 
 
@@ -101,6 +104,7 @@ Phase 1: Project Setup
 
 
 
+
 Phase 2: Add React to the webpage:
 ==================================================================================
 * In this study, we'll be doing a quick way to create a React application by loading
@@ -136,9 +140,81 @@ Phase 2: Add React to the webpage:
       ----------------------------------------------------------------------------------------
           <script src="https://unpkg.com/react@16/umd/react.development.js"></script>               // Library for global React variable.
           <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>       // LIbrary for for connecting React code to the DOM.
-          <script>
-          
-          </script>
       -----------------------------------------------------------------------------------------
 
 
+
+
+Phase 3: Select "application-root" and add ReactDOM to render app to appRoot. 
+===============================================================================
+* After you have added the libraries and the anchor point, you can use React 
+  inside your JavaScript file.
+* In this phase, you need to select the "application-root" element that will be
+  used to render the entire application and the ReactDOM.render method to 
+* ReactDOM will render the app to the webpage, which is the DOM.
+  
+    ReactDOM.render(element, container);
+  
+    * ".render" accepts TWO arguments: element and container.
+    * "element" is the contents of the container.
+    * "container" is the DOM element you insert the app into (i.e. appplication-root)
+    
+* Essentially, you select the empty div and tell React to render what you want
+  to that element.
+===============================================================================
+
+
+/// Select application-root via vanilla JavaScript...
+=========================================================================
+* Select the application-root id via document.querySelector() and the ID
+  and store as a the variable "appRoot".
+=========================================================================
+
+  3.1: Select "application-root" and store as "appRoot":
+    -----------------------------------------------------------------------------
+      const appRoot = document.querySelector('#application-root');                   // select the application-root id and store as a const name appRoot.
+    -----------------------------------------------------------------------------
+
+
+/// Add React.DOM to render app to the webpage (i.e. the DOM)...
+===========================================================================
+* Once you have the application-root id selected as appRoot, you can use 
+  ReactDOM.render to render the element to a specified container.
+* In this case, we want to render "Hello World" to the appRoot container.
+===========================================================================
+
+  3.2: Add ReactDOM.render to render the element to the container:
+    --------------------------------------------------------------------------
+      const appRoot = document.querySelector('#application-root');
+
+      ReactDOM.render('hello world!', appRoot);                                   // render "hello world" to the container "appRoot".
+    --------------------------------------------------------------------------
+
+
+
+
+
+Phase 4: Write HTML elements with React.createElement.
+============================================================================
+* Note that HTML elements will NOT render because it is simply writing
+  to the page.
+* Instead of using a querySelector, you will need to use .createElement.
+* To add HTML elements you need to use React.createElement when you create
+  a variable.
+* React.createElement is assigned to a variable and takes 3 arguments:
+
+  const myVariable = React.createElement('type', props, 'children');
+                                            |    |           |
+  const myGreeting = React.createElement('h1', null, 'Hello world!');
+
+* Note that you still need to select appRoot since thats the element that
+  will be used to render anything you sp[ecify.
+============================================================================
+
+  4.1: Create a variable and use the React.createElement method to write HTML to the DOM.
+    --------------------------------------------------------------------------------
+      const appRoot = document.querySelector('#application-root');
+      const myGreeting = React.createElement('h1', null, 'Hello world!');             // create const called "myGreeting" and create an element (React.createElement) with the type, prop,m and children.
+
+      ReactDOM.render(myGreeting, appRoot);                                           // Then when you render to the DOM, call myGreeting as the element and appRoot as the container.
+    --------------------------------------------------------------------------------
