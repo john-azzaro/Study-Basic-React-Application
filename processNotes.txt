@@ -4,11 +4,16 @@ Process Notes for Basic React Application
 
 About Process Notes
 ===================
-"Process Notes" is a step-by-step workflow document that outlines the "phases" of my app development and the successive steps taken at each
-milestone of application development. Groups of related steps are combined into "phase" modules so that they can be reorganized and refined 
-in post-review. This has proven to be EXTREMELY helpful in learning (i.e. Feynman technique (https://fs.blog/2012/04/feynman-technique/)) 
-and refining workflow so I can improve my process in future projects. It also has come in handy for some tricky bug fixes not only for
-past projects, but this one as well so I would urge you to consider at least doing a rough summary for your own benefit.
+"Process Notes" is a step-by-step workflow document that outlines the "phases" of app development which I considered to 
+be important milestones. Groups of related steps are combined into "phase" modules so that they can be reorganized and refined 
+in review. Documenting these phases has proven to be EXTREMELY helpful in learning (i.e. Feynman technique 
+(https://fs.blog/2012/04/feynman-technique/)) and refining workflow so I can improve my process in future projects. It also
+ has come in handy for some tricky bug fixes not only for past projects, but this one as well so I would urge you to consider 
+ at least doing a rough summary for your own benefit.
+
+
+
+
 
 
 Project Name
@@ -16,9 +21,9 @@ Project Name
 Basic React Application
 
 
-Project Descritpion
+Project Description
 ===================
-
+Exploration of a basic React application with a single stateless function.
 
 
 Who is this for?
@@ -33,3 +38,107 @@ What are the application features?
 
 
 Who are the competitors and product insprirations?
+==================================================
+
+
+
+
+
+
+
+Process Workflow Summary:
+========================
+
+
+  Phase 1: Project Setup:
+    1. Create HTML and JS files.
+    2. Add HTML boilerplate and connect JS.
+
+  Phase 2: Add React to the webpage:
+    1. Add "application-root" anchor point.  
+    2. Load the React library code.
+
+
+
+Phase 1: Project Setup
+===============================================================================
+* Standard setup here since its just a simple study, so there's no use of npm or
+  node related additions.
+===============================================================================
+
+/// Create HTML and JS files...
+  =================================================================================
+  * Standard setup here, HTML and JS files. No CSS is needed.
+  =================================================================================
+
+  1.1: Create HTML and JS files:
+    --------------------------------------------------------------------
+        index.html   app.js
+    --------------------------------------------------------------------
+
+/// Add HTML boilerplate and connect JS...
+  =================================================================================
+  * You can either create a script tag and insert your code there OR the better way
+    would be to create a JS file and link it to the your HTML document.
+  =================================================================================
+  1.2: Add Boilerplate to HTML and hookup JS file to HTML:
+    ---------------------------------------------------------------------
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+          <meta charset="utf-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <title>Basic React Application</title>
+          <meta name="Basic React Application" content="Exploration of basic React functionality"> 
+          <script src="app.js" defer></script>
+        </head>
+        <body>
+
+        </body>
+        </html>
+    ---------------------------------------------------------------------
+
+
+
+Phase 2: Add React to the webpage:
+==================================================================================
+* In this study, we'll be doing a quick way to create a React application by loading
+  the React libraries via CDN we need into the body of the HTML page.
+==================================================================================
+
+/// Add "application-root" anchor point...  
+==============================================================================
+* This application-root is what our javascript is going to use to select and 
+  then render the React application to.
+==============================================================================
+
+    2.1: Add an empty div with "application-root" as the ID.  
+      -------------------------------------------------------------------------------
+          <div id="application-root"></div>
+      -------------------------------------------------------------------------------
+
+
+/// Load the React library code...
+=============================================================================
+* The Two library files create two global variables for us to use in our 
+  script: React and ReactDOM. 
+* The react.development.js file is the "non-specific" part which creates the 
+  global variable React.
+* To use React when building webpages, we need the React-DOM part of the library, 
+  react-dom.development.js. 
+* The React-DOM part contains methods that live on the global variable ReactDOM, 
+  which we can use to connect our React code to the DOM.
+* Note that using the ".development" versions gives more detailed error messages.
+=============================================================================
+    
+    2.2: Add "react" and "react-dom" libraries to the HTML file:
+      ----------------------------------------------------------------------------------------
+          <script src="https://unpkg.com/react@16/umd/react.development.js"></script>               // Library for global React variable.
+          <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>       // LIbrary for for connecting React code to the DOM.
+          <script>
+          
+          </script>
+      -----------------------------------------------------------------------------------------
+
+
