@@ -24,7 +24,8 @@ Here are a few questions from the study to consider:
 
 | **Library:**                            | **CDN:**                           |
 | --------------------------------------- | ----------------------------------------------|
-| React (Development)                     |  ```JavaScript <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script> ```         |
+| React (Development)                     |  ```JavaScript 
+                                             <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script> ```         |
 | ReactDOM (Development)                  |   <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>        |
 | React (Production)                      |   <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>  |  
 | ReactDOM (Production)                   |   <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>  |  
