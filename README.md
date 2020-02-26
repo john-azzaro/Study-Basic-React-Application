@@ -75,8 +75,14 @@ set to null since we are not passing any information here. The children is the c
 ```
 
 
-
-
-
 </dd>
 </dl>
+
+<br>
+
+## Does the React Basic Application study feature commentary?
+Yes! I use extensive Commentary (mostly in the form of my thought process) so that the new and curious can follow the logic in the program and get an idea of my reasoning behind each and every line of the code.  In addition to my line-by-line commantary, I also provide a processNotes file that gives a good outline of my design and implementation process. 
+
+<br>
+
+## Screenshots
