@@ -9,7 +9,7 @@ selection of the "application root", creating elements via ```React.createElemen
 
 Here are a few questions from the study to consider:
 
-* [Screenshots](#Screenshots)
+* [What are the key takeaways from the Basic React Study?](#What-are-the-key-takeaways-from-the-Basic-React-Study)
 * [Screenshots](#Screenshots)
 
 <br>
@@ -18,3 +18,16 @@ Here are a few questions from the study to consider:
 
 <dl>
 <dd>
+
+### React and ReactDOM are available via CDN.
+----------------
+
+| **Library:**                            | **CDN:**                           |
+| --------------------------------------- | ----------------------------------------------|
+| React (Development)                     |   <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>          |
+| ReactDOM (Development)                  |   <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>        |
+| React (Production)                      |   <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>  |  
+| ReactDOM (Production)                   |   <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>  |  
+
+</dd>
+</dl>
