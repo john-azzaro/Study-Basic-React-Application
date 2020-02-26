@@ -34,12 +34,12 @@ React to the DOM. **Use .development CDN for development which will give detaile
 
 <br>
 
-### Add an anchor-point for your React application.
+### React needs an anchor-point to render the application to.
 -----------------
 You need to create an anchor point in order for your JavaScript to select and render the React application to. In the case of this study, its a empty div
 with an id of "application-root". 
 ```HTML
-    <body>
+  <body>
     <div id="application-root"></div>
 
   </body>
@@ -48,6 +48,33 @@ In your JavaScript file, you simply need to select it and store as a const.
 ```JavaScript
   const appRoot = document.querySelector('#application-root');
 ```
+
+<br>
+
+### Use the ReactDOM.render() method to render elements to a container.
+------------
+ReactDOM.render() takes two arguments, the first is the contents of the container and the second is the DOM element you insert the application into.
+
+```JavaScript   
+   ReactDOM.render(element, container);
+```  
+
+<br>
+
+### Use React.createElement() to write HTML elements to React applications.
+---------
+Although you *can* pass a string to the element parameter of ReactDOM.render(), you cant make complicated applications that way. You need to 
+use React.createElement(). You pass 3 parameters, the type, the props, and the children. The type is the element type (i.e. h1, h2, p, etc.), the "props"
+is a special keyword which stands for "properties" and is used for passing data between one component and another. In the case of this study, the properties is
+set to null since we are not passing any information here. The children is the content for the element (which in this case is the string "Hello world!").
+
+```JavaScript
+    const myVariable = React.createElement('type', props, 'children');
+ //                                          |     |          |
+ // const myGreeting = React.createElement('h1', null, 'Hello world!');
+```
+
+
 
 
 
