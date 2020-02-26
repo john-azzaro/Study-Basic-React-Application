@@ -10,6 +10,7 @@ selection of the "application root", creating elements via ```React.createElemen
 Here are a few questions from the study to consider:
 
 * [What are the key takeaways from the Basic React Study?](#What-are-the-key-takeaways-from-the-Basic-React-Study)
+* [Does the React Basic Application study feature commentary?](#Does-the-React-Basic-Application-study-feature-commentary)
 * [Screenshots](#Screenshots)
 
 <br>
@@ -86,3 +87,4 @@ Yes! I use extensive Commentary (mostly in the form of my thought process) so th
 <br>
 
 ## Screenshots
+![reactbasicApppic](https://user-images.githubusercontent.com/37447586/75314856-d3d91c00-5815-11ea-98af-1e50e05a0737.png)
