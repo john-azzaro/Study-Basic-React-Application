@@ -20,7 +20,6 @@ Here are a few questions from the study to consider:
 <dd>
 
 ## React and ReactDOM are available via CDN.
-----------------
 React library CDN is for the global variable and the ReactDOM contains the methods that live on the global variable ReactDOM and is used to connect
 React to the DOM. **Use .development CDN for development which will give detailed error messages.**
 
@@ -35,7 +34,6 @@ React to the DOM. **Use .development CDN for development which will give detaile
 <br>
 
 ## React needs an anchor-point to render the application to.
------------------
 You need to create an anchor point in order for your JavaScript to select and render the React application to. In the case of this study, its a empty div
 with an id of "application-root". 
 ```HTML
@@ -52,17 +50,20 @@ In your JavaScript file, you simply need to select it and store as a const.
 <br>
 
 ## Use the ReactDOM.render() method to render elements to a container.
-------------
-ReactDOM.render() takes two arguments, the first is the contents of the container and the second is the DOM element you insert the application into.
+ReactDOM is the glue between React and the DOM and is mostly used to mount with the .render method. ReactDOM.render() takes two arguments, the first is the **element** which is the contents of the container and the second is the **container** which is the location you want to *render* you element to. 
 
 ```JavaScript   
-   ReactDOM.render(element, container);
+   ReactDOM.render(element, container);               // Model
+```  
+
+In the practical applicatione example below, we are using ```ReactDOM.render()``` to *render* the element 'Hello world' (a basic string) to the anchor point appRoot, which is the anchor-point we specified at the beginning of the application. Note that although you can pass strings as an element in this case, for more complex application you will need to pass in stored variables with more elaborate HTML.
+```JavaScript   
+   ReactDOM.render('Hello world', appRoot);           // Practical Example rendering a string to a container.
 ```  
 
 <br>
 
 ## Use React.createElement() to write HTML elements to React applications.
----------
 Although you *can* pass a string to the element parameter of ReactDOM.render(), you cant make complicated applications that way. You need to 
 use React.createElement(). You pass 3 parameters, the type, the props, and the children. The type is the element type (i.e. h1, h2, p, etc.), the "props"
 is a special keyword which stands for "properties" and is used for passing data between one component and another. In the case of this study, the properties is
