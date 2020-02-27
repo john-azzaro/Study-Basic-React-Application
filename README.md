@@ -50,7 +50,7 @@ In your JavaScript file, you simply need to select it and store as a const.
 <br>
 
 ## Use the ReactDOM.render() method to render elements to a container.
-ReactDOM is the glue between React and the DOM and is mostly used to mount with the .render method. ReactDOM.render() takes two arguments, the first is the **element** which is the contents of the container and the second is the **container** which is the location you want to *render* you element to. 
+ReactDOM is the glue between React and the DOM and is mostly used to mount with the .render method. In effect, it is the function that does the creating and updating. ReactDOM.render() takes two arguments, the first is the **element** which is the contents of the container and the second is the **container** which is the location you want to *render* you element to. 
 
 ```JavaScript   
    ReactDOM.render(element, container);               // Model
@@ -64,10 +64,7 @@ In the practical applicatione example below, we are using ```ReactDOM.render()``
 <br>
 
 ## Use React.createElement() to write HTML elements to React applications.
-Although you *can* pass a string to the element parameter of ReactDOM.render(), you cant make complicated applications that way. You need to 
-use React.createElement(). You pass 3 parameters, the type, the props, and the children. The type is the element type (i.e. h1, h2, p, etc.), the "props"
-is a special keyword which stands for "properties" and is used for passing data between one component and another. In the case of this study, the properties is
-set to null since we are not passing any information here. The children is the content for the element (which in this case is the string "Hello world!").
+React.createElement() creates a JavaScript object with enough information inside it to descibe a single node in the DOM.You pass 3 parameters, the type, the props, and the children. The **type** specified what the *type* of element you are creating will be (i.e. h1, h2, p, etc.), the "props" parameter stands for "properties" and is used specify the attributes on the elemnt as well as passing data between one component and another. In the case of this study, the properties is set to null since we are not passing any information here. The **children** parameter is the element content. It can contain a string (which in this case is the string "Hello world!"), another React element, or an array (containng strings or React elements).
 
 ```JavaScript
     const myVariable = React.createElement('type', props, 'children');

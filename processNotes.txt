@@ -218,3 +218,7 @@ Phase 4: Write HTML elements with React.createElement.
 
       ReactDOM.render(myGreeting, appRoot);                                           // Then when you render to the DOM, call myGreeting as the element and appRoot as the container.
     --------------------------------------------------------------------------------
+
+
+    Resouces:
+    https://reactarmory.com/guides/learn-react-by-itself/react-basics
